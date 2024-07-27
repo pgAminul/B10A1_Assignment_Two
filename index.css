@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+TAS:wght@100..400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings:
+            "slnt" 0;
+ 
+
+}
+
+:root {
+    --red: #E6533C;
+    --white: #ffffff;
+    --width: 80%;
+    --gray:rgba(255, 255, 255, 0.5);
+}
+
+/* navbar Style Start here */
+header{
+background: linear-gradient(180deg, rgba(0, 0, 0, 0.876), rgba(18, 16, 16, 0.72)), rgba(179, 166, 166);
+}
+
+.navbar{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    padding-top: 20px;
+    width: var(--width);
+    margin: auto;
+}
+.logo{
+    color: var(--red);
+    font-size:2rem;
+    font-weight: 700;
+}
+.Icon{
+    color: var(--white);
+    font-size: 1.2rem;
+}
+.navIcon{
+    display: none;
+}
+.navItems{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid gray;
+    border-radius: 20px;
+    width: fit-content;
+}
+.navItem{
+    list-style: none;
+    padding: 10px;
+    margin-right: 35px;
+}
+.navItem:nth-child(1){
+    background-color: var(--red);
+    border-radius: 15px;
+}
+.navLInk{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.headerChild{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    width: var(--width);
+    margin: 40px auto 0px auto;
+    
+}
+.headerItem2{
+    background-image: url('./images/Images\ 2.png');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.headerTitle{
+    font-size: 4rem;
+    margin: 35px 0px 25px 0px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.headerStyl{
+    font-family: "Playwrite AU TAS", cursive;
+}
+.headerDescription{
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+.headerBtn{
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    margin: 0px 15px 25px 0px;
+    border: 1px solid var(--red);
+    outline: none;
+    border-radius: 25px;
+    background: transparent;
+    color: var(--white);
+}
+.headerBtn1{
+    background-color: var(--red);
+}
+
+.headerCard{
+    background: rgba(182, 159, 159, 0.204);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border-radius: 10px;
+        height: fit-content;
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 10vh;
+}
+.headerBol{
+    background-color: var(--red);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.SCardTitle{
+    font-size: 1.5rem;
+}
+.headerCard2{
+    margin: 30px 0px 0px 30px;
+}
+.headerCard1{
+    margin-top: 60%;
+}
+.cardDes{
+    color:rgb(207, 201, 201);
+}
+
+/* Hebit Section Start Here  */
+.Habit{
+    background-color: black;
+    color: var(--white);
+    padding: 50px 0px;
+}
+.habitHead{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.hebitHeader{
+    margin: 50px 0px;
+}
+.habitTitle{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.habitDes{
+    color: rgba(255, 255, 255, 0.5);
+    margin: auto;
+    font-size: 14px;
+    width: 50%;
+}
+.habitImgs{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.habitImg{
+    border-radius: 50%;
+}
+.habitName{
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+.habitDrs{
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 30px;
+}
+
+/* run section start here  */
+.runExtra{
+    background-color: black;
+    color: var(--white);
+    padding: 30px 0px;
+}
+.runHeaader{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: auto;
+    gap: 50px;
+    background-color: rgba(34, 34, 34, 1);
+    padding: 50px;
+    border-radius: 15px;
+}
+.runDes{
+    color: var(--gray);
+}
+
+.runChild2{
+    text-align: right;
+}
+.runTitle{
+    font-size: 2.8rem;
+    width: 80%;
+    margin-bottom: 30px;
+}
+.runDes{
+    font-size: 14px;
+    color: var(--gray);
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.runImg{
+    height: auto;
+    width: 70%;
+    border-radius: 20px;
+}
+.runBtn{
+    background-color: var(--red);
+    color: var(--white);
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    width: 240px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+}
+
+/* BMI START HERE  */
+.bmiCal{
+    background-color: black;
+    color: var(--white);
+    margin: auto;
+    padding: 50px;
+}
+.bmi{
+    width: 50%;
+    margin-left: 20%;
+}
+.bmi>h2{
+    font-size:2.5rem;
+}
+.bmi>p{
+    font-size: 1rem;
+    margin-top: 20px;
+    color: var(--gray);
+}
+/* responsive start here  */
+@media screen and (max-width:576px) {
+    .navbar{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .logo{
+        font-size: 1.2rem;
+    }
+    .navItems{
+        display: none;
+    }
+    .navIcon{
+        display: block;
+    }
+    .headerChild{
+        display: block;
+    }
+    .headerTitle{
+        font-size: 2rem;
+    }
+     .headerBtn {
+            padding: 10px 15px;
+            font-size: 1rem;
+            margin: 0px 10px 25px 0px;
+            
+        }
+.headerCard1 {
+   margin-top: 80%;
+}
+    .SCardTitle{
+       font-size: 1.2rem;
+    }
+    .cardDes{
+        font-size: 0.5rem;
+    }
+
+    /* habit responsive  */
+    .habitDes{
+        width: 100%;
+    }
+    .habitImgs{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    /* run responsive  */
+    .runChild2{
+        text-align: center;
+    }
+    .runImg{
+        width: 100%;
+    }
+    .runTitle{
+        font-size: 2.2rem;
+        width: 100%;
+    }
+    .runBtn{
+        width: 100%;
+    }
+    .runHeaader{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    /* bmi start here  */
+    .bmi{
+        width: 100%;
+        margin-left: 0;
+    }
+    .bmi>h2 {
+        font-size: 2rem;
+    }
+}
