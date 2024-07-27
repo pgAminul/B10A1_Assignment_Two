@@ -262,6 +262,69 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 0.876), rgba(18, 16, 16, 0.72)
     margin-top: 20px;
     color: var(--gray);
 }
+
+/* table and calculator start here  */
+.table{
+    border-collapse: collapse;
+}
+.claculatorChart{
+    font-size: 2rem;
+    margin-bottom: 50px;
+    color: var(--white);
+}
+th{
+    color: var(--white);
+}
+td{
+    color: var(--gray);
+}
+.table>tr,th,td{
+    border: 1px solid var(--gray);
+    padding: 10px;
+    text-align: left;
+}
+
+.calculator{
+    background-color: rgba(34, 34, 34, 1);
+}
+.calculatorMain{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: auto;
+    padding: 50px 0px;
+}
+.calTitle{
+    font-size: 2rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+.calDes{
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
+.cal{
+    height: 45px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background-color: rgba(128, 128, 128, 0.112);
+    color: gray;
+}
+
+.cal::placeholder{
+    color: rgba(255, 255, 255, 0.396);
+}
+
+.calThings{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+#claLast{
+    grid-column: span 2;
+}
 /* responsive start here  */
 @media screen and (max-width:576px) {
     .navbar{
@@ -333,5 +396,22 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 0.876), rgba(18, 16, 16, 0.72)
     }
     .bmi>h2 {
         font-size: 2rem;
+    }
+
+    .calculatorMain{
+        display: block;
+    }
+    .calTitle,.claculatorChart{
+        font-size: 1.7rem;
+    }
+    .calTitle{
+        margin-top: 20px;
+    }
+    .calDes{
+        font-size: 0.8rem;
+    }
+    .cal{
+        height: auto;
+        width: 100%;
     }
 }
