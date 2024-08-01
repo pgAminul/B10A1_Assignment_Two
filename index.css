@@ -129,12 +129,20 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 0.876), rgba(18, 16, 16, 0.72)
         align-items: center;
         margin-bottom: 10vh;
 }
+.fa-play{
+    color: var(--white);
+    padding: 5px;
+    opacity: 0;
+}
 .headerBol{
     background-color: var(--red);
     width: 25px;
     height: 25px;
     border-radius: 50%;
     margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .fCardTitle{
     font-size: 1.2rem;
@@ -332,7 +340,17 @@ td{
 #claLast{
     grid-column: span 2;
 }
-
+.ClculatorBtn{
+    color: var(--white);
+    background-color: var(--red);
+    padding: 10px 15px;
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    width: 180px;
+}
 /* Gym price section start here  */
 .gymPrice{
     background-color: black;
@@ -546,12 +564,21 @@ hr{
     .headerTitle{
         font-size: 2rem;
     }
+    .habitTitle{
+        margin-top: -20%;
+        font-size: 2rem;
+    }
      .headerBtn {
-            padding: 10px 15px;
-            font-size: 1rem;
+            padding: 8px 12px;
+            font-size: 0.8rem;
+            font-weight: 500;
             margin: 0px 10px 25px 0px;
             
         }
+.fa-play{
+    opacity: 1;
+    margin-top: -1px;
+}
 .headerCard1 {
    margin-top: 80%;
 }
@@ -571,17 +598,21 @@ hr{
     }
 
     /* run responsive  */
+    .runHeaader{
+        width: 90%;
+    }
     .runChild2{
-        text-align: center;
+        text-align: left;
     }
     .runImg{
         width: 100%;
     }
     .runTitle{
-        font-size: 2.2rem;
+        font-size: 2rem;
         width: 100%;
     }
     .runBtn{
+        font-size: 1.1rem;
         width: 100%;
     }
     .runHeaader{
