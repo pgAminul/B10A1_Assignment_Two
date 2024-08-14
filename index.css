@@ -36,6 +36,7 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 0.876), rgba(18, 16, 16, 0.72)
     color: var(--red);
     font-size:2rem;
     font-weight: 700;
+    font-style: italic;
 }
 .Icon{
     color: var(--white);
@@ -91,7 +92,7 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 0.876), rgba(18, 16, 16, 0.72)
     margin: 35px 0px 25px 0px;
     font-weight: bold;
     color: var(--white);
-    line-height: 0.8;
+    line-height: 0.9;
 }
 
 .headerStyl{
@@ -523,6 +524,7 @@ margin-top: 20px;
 .footerLogo{
     font-size: 2.5rem;
     color: var(--red);
+    font-style: italic;
 }
 .footerLInk,.contact{
     line-height: 1.5;
